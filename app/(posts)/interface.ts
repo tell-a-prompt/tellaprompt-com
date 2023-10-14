@@ -6,7 +6,7 @@ interface Post {
   date: string;
   content?: string;
   url?: string;
-  type: "blog" | "projects" | "talks";
+  type: "blog" | "projects";
   views?: number;
   owner?: string;
 }

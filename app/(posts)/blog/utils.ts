@@ -51,6 +51,7 @@ export type PostQueryResponse = {
     brief: string;
     views: number;
     readTime: number;
+    type: "blog" | "projects";
     tags: {
       name: string;
     }[];
