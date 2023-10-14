@@ -13,14 +13,14 @@ type Props = {
 };
 
 export async function generateStaticParams(): Promise<Props["params"][]> {
-  const allProjects = await getAllProjects('tell-a-prompt');
+  const allProjects = await getAllProjects();
   return allProjects.map((p) => ({
     slug: p.slug,
   }));
 }
 
 export default async function PostPage({ params }: Props) {
-  const allProjects = await getAllProjects('tell-a-prompt');
+  const allProjects = await getAllProjects();
   const project = allProjects.find((project) => project.slug === params.slug);
 
   if (!project) {
