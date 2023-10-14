@@ -1,4 +1,4 @@
-<img width="912" alt="tellaprompt-com" src="https://github.com/tell-a-prompt/com/public/og.png">
+<img width="912" alt="tellaprompt-com" src="[https://github.com/tell-a-prompt/com/public/og.png](https://github.com/tell-a-prompt/tellaprompt-com/blob/main/public/og.png)">
 
 <div align="center">
     <a href="https://tellaprompt.com"><h1 align="center">Tellaprompt.com</h1></a>
