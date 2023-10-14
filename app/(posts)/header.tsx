@@ -65,8 +65,8 @@ export const Header: React.FC<Props> = ({ post }) => {
               } `}
             >
               {post.type === "projects" ? (
-                <Eye className="w-5 h-5 text-yellow-200/60" />
-                //<Star className="w-5 h-5 text-yellow-200/60" />
+                //<Eye className="w-5 h-5 text-yellow-200/60" />
+                <Star className="w-5 h-5 text-yellow-200/60" />
               ) : (
                 <Eye className="w-5 h-5 text-yellow-200/60" />
               )}{" "}

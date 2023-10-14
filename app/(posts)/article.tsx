@@ -34,8 +34,8 @@ export const Article: React.FC<Props> = ({ post, showReadMore }) => {
           </span>
           <span className="text-zinc-400 text-xs flex items-center gap-1">
             {post.type === "projects" ? (
-              <Eye className="w-4 h-4 text-yellow-200/60" />
-              //<Star className="w-4 h-4 text-yellow-200/60" />
+              //<Eye className="w-4 h-4 text-yellow-200/60" />
+              <Star className="w-4 h-4 text-yellow-200/60" />
             ) : (
               <Eye className="w-4 h-4 text-yellow-200/60" />
             )}{" "}
