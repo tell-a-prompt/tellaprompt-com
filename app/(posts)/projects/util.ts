@@ -1,31 +1,19 @@
 import { kv } from "@vercel/kv";
 
 async function getReadmeImage(repoName: string, owner: string): Promise<string | null> {
-//  console.log(`Fetching README for ${repoName}`); // Verifying function call
 
   const response = await fetch(`https://api.github.com/repos/${owner}/${repoName}/readme`, {
       headers: {
           Accept: "application/vnd.github.VERSION.raw",
       },
   });
-
-//  console.log(`Response status for ${repoName}: ${response.status}`); // Checking the response status
   
   if (!response.ok) return null;
 
   const content = await response.text();
-
-//  console.log(`Content for ${repoName}:`, content.substring(0, 500)); // Logging the first 500 characters of the content to verify
-
   const imageRegex = /!\[.*?\]\((.*?)\)|<img.*?src=["'](.*?)["']/;
   const match = content.match(imageRegex);
   const imageUrl = match && (match[1] || match[2]);
-
-//  if (imageUrl) {
-//      console.log(`Image URL found for ${repoName}:`, imageUrl); // Logging the matched image URL
-//  } else {
-//      console.log(`No image URL found for ${repoName}`);
-//  }
 
   return imageUrl || null;
 }
