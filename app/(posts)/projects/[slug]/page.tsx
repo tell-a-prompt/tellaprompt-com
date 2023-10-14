@@ -6,8 +6,6 @@ import "../../mdx.css";
 
 export const revalidate = 60;
 
-const GITHUB_USERNAME = 'tell-a-prompt'; // Replace with your target username
-
 type Props = {
   params: {
     slug: string;
@@ -15,14 +13,14 @@ type Props = {
 };
 
 export async function generateStaticParams(): Promise<Props["params"][]> {
-  const allProjects = await getAllProjects(GITHUB_USERNAME);
+  const allProjects = await getAllProjects('tell-a-prompt');
   return allProjects.map((p) => ({
     slug: p.slug,
   }));
 }
 
 export default async function PostPage({ params }: Props) {
-  const allProjects = await getAllProjects(GITHUB_USERNAME);
+  const allProjects = await getAllProjects('tell-a-prompt');
   const project = allProjects.find((project) => project.slug === params.slug);
 
   if (!project) {
