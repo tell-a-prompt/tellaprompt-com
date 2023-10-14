@@ -3,9 +3,9 @@ import React from "react";
 import { Github, Linkedin, Twitter, ExternalLink } from "lucide-react";
 
 const navigation = [
-  { name: "Blog", href: "/blog" },
-  { name: "Projects", href: "/projects" },
-  { name: "Team", href: "/team" },
+  { name: "Blog", href: "/blog", noLink: false }, // Define noLink property
+  { name: "Projects", href: "/projects", noLink: false }, // Define noLink property
+  { name: "Team", href: "/team", noLink: false }, // Define noLink property
 ];
 
 export default function Home() {
