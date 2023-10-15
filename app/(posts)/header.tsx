@@ -45,6 +45,7 @@ export const Header: React.FC<Props> = ({ post }) => {
         backgroundImage:
           post.coverImage &&
           `linear-gradient(rgba(43, 43, 50, 0.9), rgba(43, 43, 50, 0.9)), url(${post.coverImage})`,
+        backgroundSize: 'cover',
       }}
     >
       <div
