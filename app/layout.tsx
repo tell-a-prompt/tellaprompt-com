@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tellaprompt.com"),
   title: {
     default:
-      "Tellaprompt",
+      "Tellaprompt: AI-Driven Solutions & Consultation | Reshaping Digital Interactions",
     template: "%s | tellaprompt.com",
   },
-  description: "AI products and services.",
+  description: "Unlock the future of digital experiences with Tellaprompt. From AI-driven consulting to innovative development, we redefine how businesses engage with AI.",
   openGraph: {
     title:
-      "Tellaprompt",
-    description: "AI products and services.",
+      "Tellaprompt: AI-Driven Solutions & Consultation | Reshaping Digital Interactions",
+    description: "Unlock the future of digital experiences with Tellaprompt. From AI-driven consulting to innovative development, we redefine how businesses engage with AI.",
     url: "https://tellaprompt.com",
     siteName: "tellaprompt.com",
     images: [
