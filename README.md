@@ -1,7 +1,7 @@
-<img width="50%" alt="tellaprompt-com" src="https://github.com/tell-a-prompt/tellaprompt-com/blob/main/public/og.png">
+![WebsiteLoad](https://github.com/tell-a-prompt/tellaprompt-com/assets/131230448/f369fd2f-35ab-402f-a9bf-3b2e1a4a7435)
 
-<div align="center">
-    <a href="https://tellaprompt.com"><h1 align="center">Tellaprompt.com</h1></a>
+<div>
+    <a href="https://tellaprompt.com"><h1>Tellaprompt.com</h1></a>
     
 Tellaprompt's website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) and deployed to [Vercel](https://vercel.com/).
 
