@@ -42,7 +42,7 @@ export async function getAllProjects(page = 1): Promise<Post[]> {
           content: "",
           coverImage: coverImage ?? repo.owner.avatar_url,
           type: "projects",
-          views,
+          views: repo.stargazers_count,
           owner: repo.owner.login,
         };
       })
