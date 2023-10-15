@@ -20,7 +20,7 @@ export const Header: React.FC<Props> = ({ post }) => {
   }
   if (post.url) {
     links.push({
-      label: "View Docs",
+      label: "View Site",
       href: post.url,
       icon: ExternalLink,
     });
