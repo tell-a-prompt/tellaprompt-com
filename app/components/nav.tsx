@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -18,7 +18,7 @@ export const Navigation: React.FC = () => {
       return;
     }
     const observer = new IntersectionObserver(([entry]) =>
-      setIntersecting(entry.isIntersecting)
+      setIntersecting(entry.isIntersecting),
     );
 
     observer.observe(ref.current);
@@ -49,10 +49,11 @@ export const Navigation: React.FC = () => {
               href="mailto:khoa@tellaprompt.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm text-white  border border-yellow-700 rounded hover:bg-zinc-800 hover:scale-110 hover:rounded-xl duration-1000"
+              className="px-4 py-2 text-sm text-white border border-yellow-700 rounded hover:bg-zinc-800 hover:scale-110 hover:rounded-xl duration-1000 flex items-center"
               title="Let's Talk"
             >
-              Let's Talk
+              <Mail className="w-4 h-4 mr-2" />
+              <span>Let's Talk</span>
             </a>
           </div>
 
@@ -66,6 +67,5 @@ export const Navigation: React.FC = () => {
         </div>
       </div>
     </header>
-    
   );
 };

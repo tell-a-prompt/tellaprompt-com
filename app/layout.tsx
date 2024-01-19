@@ -1,21 +1,20 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
 import "../global.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tellaprompt.com"),
   title: {
-    default:
-      "Tellaprompt: AI-Driven Solutions & Consultation | Reshaping Digital Interactions",
+    default: "Tellaprompt - AI Tools and Solutions",
     template: "%s | tellaprompt.com",
   },
-  description: "Unlock the future of digital experiences with Tellaprompt. From AI-driven consulting to innovative development, we redefine how businesses engage with AI.",
+  description:
+    "Explore Tellaprompt's suite of AI tools, designed to amplify the impact of AI the more you TAP in to our ecosystem. Discover our custom solutions and consulting services to empower your AI needs.",
   openGraph: {
-    title:
-      "Tellaprompt: AI-Driven Solutions & Consultation | Reshaping Digital Interactions",
-    description: "Unlock the future of digital experiences with Tellaprompt. From AI-driven consulting to innovative development, we redefine how businesses engage with AI.",
+    title: "Tellaprompt - AI Tools and Solutions",
+    description:
+      "Explore Tellaprompt's suite of AI tools, designed to amplify the impact of AI the more you TAP in to our ecosystem. Discover our custom solutions and consulting services to empower your AI needs.",
     url: "https://tellaprompt.com",
     siteName: "tellaprompt.com",
     images: [
@@ -65,10 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-      <body className="bg-black">
-        {children}
-        <Analytics />
-      </body>
+      <body className="bg-black">{children}</body>
     </html>
   );
 }
