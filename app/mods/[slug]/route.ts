@@ -1,4 +1,3 @@
-import { get } from "@vercel/edge-config";
 import { notFound } from "next/navigation";
 
 export async function GET(request: Request) {

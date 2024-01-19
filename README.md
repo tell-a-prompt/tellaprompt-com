@@ -3,7 +3,7 @@
 <div>
     <a href="https://tellaprompt.com"><h1>Tellaprompt.com</h1></a>
     
-Tellaprompt's website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) and deployed to [Vercel](https://vercel.com/).
+Tellaprompt's website, built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 Blog section is powered by [Hashnode](https://tellaprompt.hashnode.dev/)
 

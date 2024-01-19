@@ -12,8 +12,8 @@ import {
 } from "./components/carousel";
 
 const navigation = [
-  { name: "Blog", href: "/blog", noLink: false }, // Define noLink property
-  { name: "Projects", href: "/projects", noLink: false }, // Define noLink property
+  { name: "Blog", href: "https://tellaprompt.hashnode.dev", noLink: false }, // Define noLink property
+  { name: "Projects", href: "https://github.com/tell-a-prompt", noLink: false }, // Define noLink property
   { name: "Team", href: "/team", noLink: false }, // Define noLink property
 ];
 
@@ -89,9 +89,8 @@ export default function Home() {
                         <Card>
                           <a
                             href={item.link}
-                            target="_blank"
                             rel="noopener noreferrer"
-                            title="Available for consulting and development"
+                            title="Launch the tool!"
                           >
                             <div className="flex items-center justify-center w-20 py-2 text-sm text-white bg-green-600 border border-green-600 rounded hover:bg-green-500 mx-auto">
                               <ExternalLink className="w-4 h-4 mr-2" />

@@ -4,8 +4,8 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 const navigation = [
-  { name: "Blog", href: "/blog", noLink: false }, // Define noLink property
-  { name: "Projects", href: "/projects", noLink: false }, // Define noLink property
+  { name: "Blog", href: "https://tellaprompt.hashnode.dev", noLink: false }, // Define noLink property
+  { name: "Projects", href: "https://github.com/tell-a-prompt", noLink: false }, // Define noLink property
   { name: "Team", href: "/team", noLink: false }, // Define noLink property
 ];
 

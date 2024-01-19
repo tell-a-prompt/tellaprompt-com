@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { kv } from "@vercel/kv";
 import type { NextRequest } from "next/server";
 
 export async function middleware(request: NextRequest) {

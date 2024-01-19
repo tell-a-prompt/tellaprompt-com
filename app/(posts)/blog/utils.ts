@@ -1,5 +1,3 @@
-import { kv } from "@vercel/kv";
-
 export const userDataQuery = `
   query {
     user(username: "Tellaprompt") {
@@ -59,7 +57,7 @@ export type PostQueryResponse = {
 };
 
 export async function transformBlog(
-  post: PostQueryResponse["post"]
+  post: PostQueryResponse["post"],
 ): Promise<Post> {
   const { views } =
     "location" in globalThis
@@ -93,7 +91,7 @@ export async function getAllBlogs(page = 0): Promise<Post[]> {
   };
 
   return await Promise.all(
-    data?.user?.publication?.posts.map(transformBlog) || []
+    data?.user?.publication?.posts.map(transformBlog) || [],
   );
 }
 
