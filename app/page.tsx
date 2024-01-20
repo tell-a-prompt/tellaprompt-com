@@ -13,7 +13,7 @@ import {
 
 const navigation = [
   { name: "Blog", href: "https://tellaprompt.hashnode.dev", noLink: false }, // Define noLink property
-  { name: "Projects", href: "https://github.com/tell-a-prompt", noLink: false }, // Define noLink property
+  { name: "GitHub", href: "https://github.com/tell-a-prompt", noLink: false }, // Define noLink property
   { name: "Team", href: "/team", noLink: false }, // Define noLink property
 ];
 
@@ -129,7 +129,7 @@ export default function Home() {
           <p className="text-xs sm:text-sm text-zinc-500 pb-8">
             At Tellaprompt, we're continuously expanding our suite of AI tools.
             Our mission? To empower you with a secure, universal account that
-            amplifies the impact of AI across the entire ecosystem.
+            amplifies the impact of AI the more you use our ecosystem.
           </p>
           <p className="text-xs text-zinc-300 tracking-tight">
             Need a custom solution?

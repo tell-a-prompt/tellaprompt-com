@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const navigation = [
   { name: "Blog", href: "https://tellaprompt.hashnode.dev", noLink: false }, // Define noLink property
-  { name: "Projects", href: "https://github.com/tell-a-prompt", noLink: false }, // Define noLink property
+  { name: "GitHub", href: "https://github.com/tell-a-prompt", noLink: false }, // Define noLink property
   { name: "Team", href: "/team", noLink: false }, // Define noLink property
 ];
 
@@ -49,7 +49,7 @@ export const Navigation: React.FC = () => {
               href="mailto:khoa@tellaprompt.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm text-white border border-yellow-700 rounded hover:bg-zinc-800 hover:scale-110 hover:rounded-xl duration-1000 flex items-center"
+              className="px-4 py-2 text-sm text-white border border-green-600 rounded hover:bg-zinc-800 hover:scale-110 hover:rounded-xl duration-1000 flex items-center"
               title="Let's Talk"
             >
               <Mail className="w-4 h-4 mr-2" />
